@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home_pages/index'
+
   resources :locations
 
   resources :bids
