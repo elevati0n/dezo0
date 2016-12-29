@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @job.price %>
+</p>
+
+<p>
+  <strong>Auction:</strong>
+  <%= @job.auction %>
+</p>
+
+<p>
+  <strong>Reservation:</strong>
+  <%= @job.reservation %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>
