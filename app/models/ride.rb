@@ -4,4 +4,5 @@ class Ride < ActiveRecord::Base
   has_one :job
   has_one :driver
   has_one :passenger
+  has_one :location
 end
