@@ -29,6 +29,7 @@ class PassengersController < ApplicationController
   # POST /passengers.json
   def create
     @passenger = Passenger.new(passenger_params)
+    @passenger.user = current_user
 
     respond_to do |format|
       if @passenger.save
