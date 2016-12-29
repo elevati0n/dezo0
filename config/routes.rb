@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :notifications
+
   resources :reservations
 
   devise_for :admin_users, ActiveAdmin::Devise.config
