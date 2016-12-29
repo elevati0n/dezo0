@@ -5,4 +5,5 @@ class Ride < ActiveRecord::Base
   has_one :driver
   has_one :passenger
   has_one :location
+  has_one :start_time
 end
